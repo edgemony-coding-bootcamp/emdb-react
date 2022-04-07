@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import { Loading } from "./components/Loading";
 import { Nav } from "./components/Nav";
+import { Footer } from "./components/Footer";
 
 const Home = lazy(() => import(/* webpackChunkName: "home" */ "./pages/Home"));
 const Add = lazy(() => import(/* webpackChunkName: "add" */ "./pages/Add"));
@@ -39,6 +40,8 @@ function App() {
             }
           />
         </Routes>
+
+        <Footer />
       </main>
     </>
   );

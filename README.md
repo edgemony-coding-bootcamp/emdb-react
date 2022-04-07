@@ -1,3 +1,82 @@
+# Edgemony Movie Database
+
+> Movie management SPA built in React for learning purposes.
+
+Live demo:
+[https://edgemony-coding-bootcamp.github.io/emdb-react/](https://edgemony-coding-bootcamp.github.io/emdb-react/)
+
+### Requirements
+
+A user of the application must be able to:
+
+- browse all of the available movies
+- filter results by searching for title or categories
+- add a new movie entry to the DB
+- update an existing movie entry
+- delete an existing movie entry
+
+### Endpoint and data structure
+
+The main REST API endpoint is `https://edgemony-backend.herokuapp.com/movies`.
+
+the data scheme returned from the endpoint is:
+
+```json
+[
+  {
+    "id": Number,
+    "title": String,
+    "poster": String,
+    "year": Number,
+    "genres": Array<String>,
+    "description": String
+  }
+]
+```
+
+### Libraries
+
+- [React](https://reactjs.org/) - _A JavaScript library for building user interfaces_
+- [React router DOM](https://reactrouter.com/) - _client side routing_
+- [date-fns](https://date-fns.org/) - _modern JavaScript date utility library_
+- [normalize.css](https://necolas.github.io/normalize.css/) - _a modern, HTML5-ready alternative to CSS resets_
+- [CSS Modules](https://github.com/css-modules/css-modules) - _incapsulate styles in components_
+- [SASS](https://sass-lang.com/) - _CSS with superpowers_
+
+### How to run it locally
+
+1. clone the repo
+
+```
+$ git clone git@github.com:edgemony-coding-bootcamp/emdb-react.git
+```
+
+2. cd into the folder
+
+```
+$ cd emdb-react
+```
+
+3. install dependencies
+
+```
+$ npm ci
+```
+
+4. run the development server
+
+```
+$ npm start
+```
+
+5. open the browser at `localhost:3000`
+
+### License
+
+Released under the [MIT license](LICENSE).
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,0 +1,7 @@
+@import "./../../libs/utils.scss";
+
+.form {
+  input {
+    @include input;
+  }
+}
