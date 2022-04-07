@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/main.3040fc04.css",
+    "main.js": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/main.69f05032.js",
+    "home.css": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/home.03af5674.chunk.css",
+    "home.js": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/home.855f9a13.chunk.js",
+    "add.css": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/add.0aa0b995.chunk.css",
+    "add.js": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/add.fd65b690.chunk.js",
+    "static/js/787.967bd857.chunk.js": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/787.967bd857.chunk.js",
+    "index.html": "https://edgemony-coding-bootcamp.github.io/emdb-react/index.html",
+    "main.3040fc04.css.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/main.3040fc04.css.map",
+    "main.69f05032.js.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/main.69f05032.js.map",
+    "home.03af5674.chunk.css.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/home.03af5674.chunk.css.map",
+    "home.855f9a13.chunk.js.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/home.855f9a13.chunk.js.map",
+    "add.0aa0b995.chunk.css.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/add.0aa0b995.chunk.css.map",
+    "add.fd65b690.chunk.js.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/add.fd65b690.chunk.js.map",
+    "787.967bd857.chunk.js.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/787.967bd857.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3040fc04.css",
+    "static/js/main.69f05032.js"
+  ]
+}
