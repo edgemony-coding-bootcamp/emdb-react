@@ -12,6 +12,7 @@ $gap: 30px;
   input {
     display: block;
     width: 100%;
+    box-sizing: border-box;
 
     @include input;
   }
@@ -19,12 +20,29 @@ $gap: 30px;
 
 .list {
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: $gap;
-  row-gap: $gap;
 
   li {
     list-style: none;
+    margin: $gap 0;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: $gap;
+    row-gap: $gap;
+
+    li {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

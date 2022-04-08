@@ -32,9 +32,9 @@ const Home = () => {
       </form>
       <ul className={styles.list}>
         {movies.map((movie, index) => (
-          <Card>
-            <li key={index}>{movie.title}</li>
-          </Card>
+          <li key={index}>
+            <Card>{movie.title}</Card>
+          </li>
         ))}
       </ul>
     </section>
