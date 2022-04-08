@@ -38,6 +38,7 @@ const Edit = () => {
     setDescription(data.description);
   };
 
+  /* eslint-disable */
   useEffect(() => {
     getData();
   }, []);
