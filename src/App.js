@@ -7,6 +7,7 @@ import { Footer } from "./components/Footer";
 
 const Home = lazy(() => import(/* webpackChunkName: "home" */ "./pages/Home"));
 const Add = lazy(() => import(/* webpackChunkName: "add" */ "./pages/Add"));
+const Edit = lazy(() => import(/* webpackChunkName: "edit" */ "./pages/Edit"));
 
 function App() {
   const state = {
@@ -14,7 +15,6 @@ function App() {
     nav: [
       { url: "/", label: "Home" },
       { url: "/add", label: "Add movie" },
-      { url: "/random", label: "Random" },
     ],
   };
 
@@ -36,6 +36,14 @@ function App() {
             element={
               <Suspense fallback={<Loading />}>
                 <Add />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/edit/:id"
+            element={
+              <Suspense fallback={<Loading />}>
+                <Edit />
               </Suspense>
             }
           />

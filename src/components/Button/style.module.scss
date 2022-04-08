@@ -1,5 +1,6 @@
+@import "./../../libs/utils.scss";
 
-@import './../../libs/utils.scss';
+$danger: #f30070;
 
 .button {
   background-color: $main;
@@ -11,6 +12,15 @@
   font-size: 1em;
   width: 100%;
   cursor: pointer;
+
+  &.danger {
+    background-color: $danger;
+
+    &:hover {
+      background-color: lighten($danger, 5%);
+      box-shadow: 0px 0px 10px lighten($danger, 20%);
+    }
+  }
 
   &:hover {
     background-color: lighten($main, 5%);

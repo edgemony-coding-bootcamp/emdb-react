@@ -42,6 +42,7 @@ the data scheme returned from the endpoint is:
 - [normalize.css](https://necolas.github.io/normalize.css/) - _a modern, HTML5-ready alternative to CSS resets_
 - [CSS Modules](https://github.com/css-modules/css-modules) - _incapsulate styles in components_
 - [SASS](https://sass-lang.com/) - _CSS with superpowers_
+- [React Icons](https://react-icons.github.io/react-icons/) - _Font Awesome icons adapted for React_
 
 ### How to run it locally
 

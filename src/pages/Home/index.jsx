@@ -5,6 +5,7 @@ import styles from "./style.module.scss";
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
+  const [results, setResults] = useState([]);
   const [search, setSearch] = useState("");
 
   const getData = async () => {
@@ -15,6 +16,15 @@ const Home = () => {
   useEffect(() => {
     getData();
   }, []);
+
+  useEffect(() => {
+    const data = movies.filter(
+      (movie) =>
+        movie.title.toLowerCase().includes(search.toLowerCase()) ||
+        movie.genres.join().includes(search.toLowerCase())
+    );
+    setResults(data);
+  }, [search, movies]);
 
   return (
     <section>
@@ -31,9 +41,9 @@ const Home = () => {
         />
       </form>
       <ul className={styles.list}>
-        {movies.map((movie, index) => (
+        {results.map((movie, index) => (
           <li key={index}>
-            <Card>{movie.title}</Card>
+            <Card movie={movie} />
           </li>
         ))}
       </ul>

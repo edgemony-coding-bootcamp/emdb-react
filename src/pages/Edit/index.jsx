@@ -1,12 +1,13 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { FaPlus } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { FaPen, FaTrash } from "react-icons/fa";
 import { Button } from "./../../components/Button";
-import { POST } from "./../../libs/http";
+import { GET, PUT, DELETE } from "./../../libs/http";
 import styles from "./style.module.scss";
 
-const Add = () => {
+const Edit = () => {
   const navigate = useNavigate();
+  const { id } = useParams();
 
   const [title, setTitle] = useState("");
   const [year, setYear] = useState(new Date().getFullYear());
@@ -19,9 +20,27 @@ const Add = () => {
 
     const movie = { title, year, poster, genres, description };
 
-    await POST("/movies", movie);
+    await PUT("/movies", id, movie);
     navigate("/");
   };
+
+  const deleteMovie = async () => {
+    await DELETE("/movies", id);
+    navigate("/");
+  };
+
+  const getData = async () => {
+    const data = await GET(`/movies/${id}`);
+    setTitle(data.title);
+    setYear(data.year);
+    setPoster(data.poster);
+    setGenres(data.genres);
+    setDescription(data.description);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
 
   return (
     <form className={styles.form} onSubmit={submitData}>
@@ -79,11 +98,15 @@ const Add = () => {
       </div>
       <div className={styles.actions}>
         <Button>
-          <FaPlus /> Add to the database
+          <FaPen /> Edit movie
+        </Button>
+
+        <Button type="button" danger={true} cb={deleteMovie}>
+          <FaTrash /> Delete movie
         </Button>
       </div>
     </form>
   );
 };
 
-export default Add;
+export default Edit;
