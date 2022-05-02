@@ -1,9 +1,10 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import { Loading } from "./components/Loading";
 import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
+import { Alert } from "./components/Alert";
 
 const Home = lazy(() => import(/* webpackChunkName: "home" */ "./pages/Home"));
 const Add = lazy(() => import(/* webpackChunkName: "add" */ "./pages/Add"));
@@ -18,10 +19,23 @@ function App() {
     ],
   };
 
+  const [alert, setAlert] = useState({
+    visible: false,
+    content: "",
+  });
+
+  const editSuccess = () => {
+    setAlert({
+      visible: true,
+      content: "scheda aggiornata correttamente",
+    });
+  };
+
   return (
     <>
       <Nav title={state.title} data={state.nav} />
       <main>
+        <Alert visible={alert.visible} content={alert.content} />
         <Routes>
           <Route
             path="/"
@@ -43,7 +57,7 @@ function App() {
             path="/edit/:id"
             element={
               <Suspense fallback={<Loading />}>
-                <Edit />
+                <Edit editCallback={editSuccess} />
               </Suspense>
             }
           />

@@ -5,7 +5,7 @@ import { Button } from "./../../components/Button";
 import { GET, PUT, DELETE } from "./../../libs/http";
 import styles from "./style.module.scss";
 
-const Edit = () => {
+const Edit = (props) => {
   const navigate = useNavigate();
   const { id } = useParams();
 
@@ -21,6 +21,7 @@ const Edit = () => {
     const movie = { title, year, poster, genres, description };
 
     await PUT("/movies", id, movie);
+    props.editCallback();
     navigate("/");
   };
 
