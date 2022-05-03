@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/main.4b0918fc.css",
-    "main.js": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/main.385d3293.js",
+    "main.css": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/main.8de87f93.css",
+    "main.js": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/main.ec677eec.js",
     "home.css": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/home.16242a2e.chunk.css",
     "home.js": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/home.d887ab27.chunk.js",
     "add.css": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/add.c7d34204.chunk.css",
@@ -12,8 +12,8 @@
     "static/js/105.bc2b9d55.chunk.js": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/105.bc2b9d55.chunk.js",
     "static/js/135.bfc64b01.chunk.js": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/135.bfc64b01.chunk.js",
     "index.html": "https://edgemony-coding-bootcamp.github.io/emdb-react/index.html",
-    "main.4b0918fc.css.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/main.4b0918fc.css.map",
-    "main.385d3293.js.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/main.385d3293.js.map",
+    "main.8de87f93.css.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/main.8de87f93.css.map",
+    "main.ec677eec.js.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/main.ec677eec.js.map",
     "home.16242a2e.chunk.css.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/home.16242a2e.chunk.css.map",
     "home.d887ab27.chunk.js.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/home.d887ab27.chunk.js.map",
     "add.c7d34204.chunk.css.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/css/add.c7d34204.chunk.css.map",
@@ -25,7 +25,7 @@
     "135.bfc64b01.chunk.js.map": "https://edgemony-coding-bootcamp.github.io/emdb-react/static/js/135.bfc64b01.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b0918fc.css",
-    "static/js/main.385d3293.js"
+    "static/css/main.8de87f93.css",
+    "static/js/main.ec677eec.js"
   ]
 }
