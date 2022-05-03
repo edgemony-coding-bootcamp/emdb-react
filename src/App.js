@@ -31,11 +31,22 @@ function App() {
     });
   };
 
+  const hideAlert = () => {
+    setAlert({
+      visible: false,
+      content: "",
+    });
+  };
+
   return (
     <>
       <Nav title={state.title} data={state.nav} />
       <main>
-        <Alert visible={alert.visible} content={alert.content} />
+        <Alert
+          visible={alert.visible}
+          content={alert.content}
+          timeoutCallback={hideAlert}
+        />
         <Routes>
           <Route
             path="/"
