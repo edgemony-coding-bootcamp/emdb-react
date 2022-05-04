@@ -2,7 +2,7 @@
   display: none;
   padding: 1px 20px;
   color: white;
-  background-color: #F38300;
+  background-color: #0070f3;
   // overflow: hidden;
   // height: 0;
   // transition: all 0.5s ease;
@@ -10,6 +10,10 @@
   // top: -100px;
   // left: 50px;
   // opacity: 0;
+}
+
+.red {
+  background-color: #f38300;
 }
 
 .visible {

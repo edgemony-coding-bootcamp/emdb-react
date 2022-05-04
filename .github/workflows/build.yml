@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         # versione di node.js da utilizzare
-        node-version: [18]
+        node-version: [17.1]
 
     steps:
       - uses: actions/checkout@v2

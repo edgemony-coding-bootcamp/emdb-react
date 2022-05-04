@@ -1,10 +1,5 @@
 const Loading = () => {
-  return (
-    <>
-      <div>Loading...</div>
-      <h2>prova</h2>
-    </>
-  );
+  return <div>Loading...</div>;
 };
 
 export { Loading };
