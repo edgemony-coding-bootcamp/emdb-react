@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import styles from "./style.module.scss";
 
 const Nav = (props) => {
-  const title = props.title || "App";
   const data = props.data || [];
 
   return (
