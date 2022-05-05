@@ -8,7 +8,7 @@ const Nav = (props) => {
   return (
     <div className={styles.line}>
       <main className={styles.top}>
-        <h1 className={styles.title}>{title}</h1>
+        <h1 className={styles.title}>Robba cooool</h1>
         <nav>
           <ul>
             {data.map((item, index) => (
