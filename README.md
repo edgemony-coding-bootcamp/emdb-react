@@ -72,6 +72,14 @@ $ npm start
 
 5. open the browser at `localhost:3000`
 
+### Notification alert flow
+
+Application "bird-eye view" flow
+![_img/alert1.png](_img/alert1.png)
+
+`<App />` component detail
+![_img/alert2.png](_img/alert2.png)
+
 ### License
 
 Released under the [MIT license](LICENSE).
